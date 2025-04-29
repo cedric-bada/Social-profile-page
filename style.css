@@ -1,0 +1,110 @@
+:root {
+  --grey-900: hsl(0, 0%, 8%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-700: hsl(0, 0%, 20%);
+
+  --white: hsl(0, 0%, 100%);
+  --accent: hsl(75, 94%, 57%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+a {
+  text-decoration: none;
+}
+
+img,
+a {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--grey-900);
+  color: var(--white);
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+}
+
+.social-links-profile {
+  padding: 2.2rem;
+  width: 85%;
+  max-width: 22.5rem;
+  margin: 0 auto;
+  background: var(--grey-800);
+  border-radius: 10px;
+}
+
+.social-links-content {
+  --gap: 1.4rem;
+  place-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  margin-top: 0.5rem;
+  border-radius: 100%;
+}
+
+.user-content {
+  --gap: 0.4rem;
+
+  .user-name {
+    font-size: 1.475rem;
+  }
+
+  .user-location {
+    font-weight: 600;
+    color: var(--accent);
+  }
+}
+
+.user-title {
+  font-size: 0.845rem;
+}
+
+.btn {
+  /* font-size: 0.875rem; */
+  text-align: center;
+  background: var(--grey-700);
+  color: inherit;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.btn:hover {
+  background: var(--accent);
+  color: var(--grey-700);
+}
+
+/* uitilies */
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+@media (max-width: 24em) {
+  .social-links-profile {
+    padding: 1.5em;
+  }
+}
